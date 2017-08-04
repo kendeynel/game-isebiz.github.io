@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Stylesheet.css">
+    <title>Product Gallery</title>
+  </head>
+  <body>
+    <header>
+      <h1>Game Products</h1>
+      <h2>
+        <a href="About.html" style="color: #00FFFF">About</a>
+        <a href="Main.html" style="color: #00FFFF">Main</a>
+        <a href="Contact.html" style="color: #00FFFF">Contact</a>
+        <a href="checkout.html" style="color: #00FFFF">Order Now</a>
+    </h2>
+    </header>
+    <style>
+
+      .textOverImage{
+        position: relative;
+        width: 200px;
+        height: 200px;
+        float: left;
+        margin: 4px;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 0.5s;
+
+      }
+      .textOverImage:hover{
+        background-size: 110%;
+      }
+      .textOverImage:after{
+        position: absolute;
+        top: 88%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        overflow: hidden;
+        background-color: rgba(0,0,0,0.6);
+        color: #fff;
+        padding:0 8px;
+        content:attr(data-text);
+        transition: 0.5s;
+      }
+      .textOverImage:hover:after{
+        top: 0;
+        padding: 8px;
+        background-color: rgba(0,0,0,0.6);
+      }
+      .textOverImage:first-line{
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.5em;
+      }
+
+    </style>
+
+    <section>
+
+      <a href="ps4.html" class="textOverImage" style="background-image:url(Pics/ps4.jpg)"
+       data-text="Playstation 4
+Price: ₱20,000">
+      </a>
+
+      <a href="xbox.html" class="textOverImage" style="background-image:url(Pics/xbox1.jpg)"
+       data-text="Xbox One
+Price: ₱20,000">
+      </a>
+
+      <a href="nswitch.html" class="textOverImage" style="background-image:url(Pics/nswitch.jpg)"
+       data-text="Nintendo Switch
+Price: ₱10,000">
+      </a>
+
+      <a href="nds.html" class="textOverImage" style="background-image:url(Pics/nds.jpeg)"
+       data-text="Nintendo DS
+Price: ₱8,000">
+      </a>
+
+      <a href="psvita.html" class="textOverImage" style="background-image:url(Pics/psvita.jpg)"
+       data-text="PS Vita
+Price: ₱10,000">
+      </a>
+
+      <a href="xbox360.html" class="textOverImage" style="background-image:url(Pics/xbox360.png)"
+       data-text="Xbox 360
+Price: ₱10,000">
+      </a>
+
+      <a href="wii.html" class="textOverImage" style="background-image:url(Pics/wii.jpeg)"
+       data-text="Nintendo Wii
+Price: ₱3,000">
+      </a>
+
+      <a href="ps3.html" class="textOverImage" style="background-image:url(Pics/ps3.jpeg)"
+       data-text="Playstation 3
+Price: ₱10,000">
+      </a>
+
+      <a href="bf1.html" class="textOverImage" style="background-image:url(Pics/bf1.jpg)"
+       data-text="Battle Field 1(PS4)
+Price: ₱800">
+      </a>
+
+      <a href="cod.html" class="textOverImage" style="background-image:url(Pics/cod.jpg)"
+       data-text="Call of Duty WWII(PS4)
+Price: ₱600">
+      </a>
+
+      <a href="crash.html" class="textOverImage" style="background-image:url(Pics/crash.jpg)"
+       data-text="Crash Bandicoot(PS4)
+Price: ₱500">
+      </a>
+
+      <a href="darksiders.html" class="textOverImage" style="background-image:url(Pics/darksiders.jpg)"
+       data-text="Darksiders(PS4)
+Price: ₱400">
+      </a>
+
+      <a href="dyinglight.html" class="textOverImage" style="background-image:url(Pics/dyinglight.jpg)"
+       data-text="Dying Light(PS4)
+Price: ₱300">
+      </a>
+
+      <a href="farcry5.html" class="textOverImage" style="background-image:url(Pics/farcry5.jpg)"
+       data-text="Far Cry5(PS4)
+Price: ₱900">
+      </a>
+
+      <a href="uncharted4.html" class="textOverImage" style="background-image:url(Pics/uncharted4.jpg)"
+       data-text="Uncharted4(PS4)
+Price: ₱700">
+      </a>
+
+    </section>
+
+
+  </body>
+
+</html>

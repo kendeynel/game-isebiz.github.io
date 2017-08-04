@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Stylesheet.css">
+
+
+    <title>Check Out</title>
+  </head>
+  <body>
+
+<header>
+  <h1 id="firstHeader">
+Order Details
+  </h1>
+  <h3>
+  <a href="About.html" style="color: #00FFFF">About</a>
+  <a href="Main.html" style="color: #00FFFF">Main</a>
+  <a href="Contact.html" style="color: #00FFFF">Contact</a>
+</h3>
+</header>
+
+
+<section>
+  <form>
+    <br>Item:
+    <select id="item">
+      <option value="ps">Playstation 4</option>
+      <option value="xo">Xbox One</option>
+      <option value="ns">Nintendo Switch</option>
+      <option value="nds">Nintendo DS</option>
+      <option value="psv">PS Vita</option>
+      <option value="xx">Xbox 360</option>
+      <option value="nw">Nintendo Wii</option>
+      <option value="ps3">Playstation 3</option>
+      <option value="bf">Battlefield 1</option>
+      <option value="cod">Call of Duty WWII</option>
+      <option value="cc">Crash Bandicoot</option>
+      <option value="ds">Darksiders</option>
+      <option value="dl">Dying Light</option>
+      <option value="fc">Far Cry 5</option>
+      <option value="un">Uncharted 4</option>
+    </select><br>
+
+  <br>Quantity:
+  <input type="text" id="quantity" name="Quantity"><br>
+
+  <br>
+  <button type="button" onclick="compute()"> Compute </button>
+
+
+  <br>
+  <br>Base Price:
+  <input type="text" id="bf" readonly="true">
+  <br>Price After Shipping:
+  <input type="text" id="af" readonly="true">
+  <br>Total:
+  <input type="text" id="tot" readonly="true">
+  <br>
+
+</form>
+</section>
+
+<section>
+  <br>
+  <br>
+  <form>
+  First name:
+  <input type="text" id="fname" name="firstName"><br>
+  <br>Last name:
+  <input type="text" id="lname" name="lastname"><br>
+  <br>Email:
+  <input type="text" id="email" name="email"><br>
+  <br>Physical Address:
+  <input type="text" id="address" name="address"><br>
+  <br>Cellphone:
+  <input type="text" id="cell" name="address"><br>
+  <br>Payment Type:
+  <input type="radio" name="payment" value="Cash" checked> Cash
+  <input type="radio" name="payment" value="Credit Card"> Credit Card<br>
+
+  <br>
+<br>
+
+  <button type="submit" onclick="info()"> Checkout </button>
+</section>
+
+
+<script type="text/javascript">
+
+function compute(){
+
+  var a = document.getElementById("item").value;
+  var quan = document.getElementById("quantity").value;
+
+
+  if (a=='ps'){
+    var price = 20000 * quan;
+    var aftershipping = price;
+    var tax = aftershipping * .12;
+    var total = aftershipping + tax;
+
+    document.getElementById("bf").value = price;
+    document.getElementById("af").value = aftershipping;
+    document.getElementById("tot").value = total;
+  } else if (a=='xo'){
+    var price = 20000 * quan;
+    var aftershipping = price;
+    var tax = aftershipping * .12;
+    var total = aftershipping + tax;
+
+    document.getElementById("bf").value = price;
+    document.getElementById("af").value = aftershipping;
+    document.getElementById("tot").value = total;
+
+  }else if (a=='ns'){
+    var price = 10000 * quan;
+    var aftershipping = price;
+    var tax = aftershipping * .12;
+    var total = aftershipping + tax;
+
+    document.getElementById("bf").value = price;
+    document.getElementById("af").value = aftershipping;
+    document.getElementById("tot").value = total;
+  }else if (a=='nds'){
+    var price = 8000 * quan;
+    var aftershipping = price;
+    var tax = aftershipping * .12;
+    var total = aftershipping + tax;
+
+    document.getElementById("bf").value = price;
+    document.getElementById("af").value = aftershipping;
+    document.getElementById("tot").value = total;
+  }else if (a=='psv'){
+    var price = 10000 * quan;
+    var aftershipping = price;
+    var tax = aftershipping * .12;
+    var total = aftershipping + tax;
+
+    document.getElementById("bf").value = price;
+    document.getElementById("af").value = aftershipping;
+    document.getElementById("tot").value = total;
+  }else if (a=='xx'){
+    var price = 10000 * quan;
+    var aftershipping = price;
+    var tax = aftershipping * .12;
+    var total = aftershipping + tax;
+
+    document.getElementById("bf").value = price;
+    document.getElementById("af").value = aftershipping;
+    document.getElementById("tot").value = total;
+  }else if (a=='nw'){
+    var price = 3000 * quan;
+    var aftershipping = price;
+    var tax = aftershipping * .12;
+    var total = aftershipping + tax;
+
+    document.getElementById("bf").value = price;
+    document.getElementById("af").value = aftershipping;
+    document.getElementById("tot").value = total;
+  }else if (a=='ps3'){
+    var price = 10000;
+    var aftershipping = price;
+    var tax = aftershipping * .12;
+    var total = aftershipping + tax;
+
+    document.getElementById("bf").value = price;
+    document.getElementById("af").value = aftershipping;
+    document.getElementById("tot").value = total;
+  }else if (a=='bf'){
+    var price = 800 * quan;
+    var aftershipping = price + 100;
+    var tax = aftershipping * .12;
+    var total = aftershipping + tax;
+
+    document.getElementById("bf").value = price;
+    document.getElementById("af").value = aftershipping;
+    document.getElementById("tot").value = total;
+  }else if (a=='cod'){
+    var price = 600 * quan;
+    var aftershipping = price + 100;
+    var tax = aftershipping * .12;
+    var total = aftershipping + tax;
+
+    document.getElementById("bf").value = price;
+    document.getElementById("af").value = aftershipping;
+    document.getElementById("tot").value = total;
+  }else if (a=='cc'){
+    var price = 500 * quan;
+    var aftershipping = price + 100;
+    var tax = aftershipping * .12;
+    var total = aftershipping + tax;
+
+    document.getElementById("bf").value = price;
+    document.getElementById("af").value = aftershipping;
+    document.getElementById("tot").value = total;
+  }else if (a=='ds'){
+    var price = 400 * quan;
+    var aftershipping = price + 100;
+    var tax = aftershipping * .12;
+    var total = aftershipping + tax;
+
+    document.getElementById("bf").value = price;
+    document.getElementById("af").value = aftershipping;
+    document.getElementById("tot").value = total;
+  }else if (a=='dl'){
+    var price = 300 * quan;
+    var aftershipping = price + 100;
+    var tax = aftershipping * .12;
+    var total = aftershipping + tax;
+
+    document.getElementById("bf").value = price;
+    document.getElementById("af").value = aftershipping;
+    document.getElementById("tot").value = total;
+  }else if (a=='fc'){
+    var price = 900 * quan;
+    var aftershipping = price + 100;
+    var tax = aftershipping * .12;
+    var total = aftershipping + tax;
+
+    document.getElementById("bf").value = price;
+    document.getElementById("af").value = aftershipping;
+    document.getElementById("tot").value = total;
+  }else if (a=='un'){
+    var price = 700 * quan;
+    var aftershipping = price + 100;
+    var tax = aftershipping * .12;
+    var total = aftershipping + tax;
+
+    document.getElementById("bf").value = price;
+    document.getElementById("af").value = aftershipping;
+    document.getElementById("tot").value = total;
+  } else {
+    var price = 0;
+  }
+}
+
+function info(){
+  var firstName = document.getElementById("fname").value;
+  var lastName = document.getElementById("lname").value;
+  var email = document.getElementById("email").value;
+  var add = document.getElementById("address").value;
+  var cellphone = document.getElementById("cell").value;
+
+
+  if(firstName==''){
+    alert("Sorry but please input your first Name.");
+    return false;
+  }
+  else if(lastName=='')
+    {
+      alert("Sorry but please input your last Name.");
+      return false;
+    }
+  else if(email=='')
+      {
+        alert("Sorry but please input your email.");
+        return false;
+      }
+      else if(add=='')
+        {
+          alert("Sorry but please input your address.");
+          return false;
+        }
+  else if(cellphone=='')
+          {
+            alert("Sorry but please input your cellphone number.");
+            return false;
+          }
+        else{
+    alert("You have successfully checked out! Thank you for Purchasing.");
+    return true;
+  }
+}
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

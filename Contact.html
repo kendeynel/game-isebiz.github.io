@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Stylesheet.css">
+    <title></title>
+  </head>
+  <body>
+
+      <header>
+        <h1>
+          CONTACT US
+        </h1>
+        <h3>
+        <a href="About.html" style="color: #00FFFF">About</a>
+        <a href="Main.html" style="color: #00FFFF">Main</a>
+        <h3>
+      </header>
+
+      <div>
+        <h3>General Contact</h3>
+         <p>
+            Phone: 732-367-5505
+            <br>
+            Email: office@achieve3000.com
+            <br>
+         </p>
+      </div>
+
+      <section>
+        <h3>Got Questions?</h3>
+        Full Name:
+        <input type="text" id="fullname" name="fullname" >
+        <br><br>
+        Email:
+        <input id="Email" name="Email" maxlength="255" type="email" >
+        <br><br>
+        <textarea id="query" placeholder="Share your insights here:"></textarea>
+        <br><br>
+        <button id="submit" type="submit" name="button" onclick="submit()">Submit</button>
+        <br><br>
+
+      </section>
+
+      <script>
+        function submit()
+          {
+              alert("Thank you for your feedback!");
+          };
+      </script>
+
+
+
+  </body>
+</html>

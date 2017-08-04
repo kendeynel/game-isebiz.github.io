@@ -1,0 +1,69 @@
+#slogan{
+  font-style: italic;
+  color: black;
+
+
+
+}
+
+body {
+    background-image: url("Pics/background.jpg");
+    color: white;
+    text-align: center;
+    font-family: monospace;
+}
+
+p{
+    border: 2px solid white;
+    border-radius: 12px;
+}
+
+h1 {
+  text-align: center;
+   font-style: oblique;
+   text-shadow: #000000 1px 1px 1px;
+
+}
+input,textarea {
+    width: 20%;
+}
+
+.container{
+  max-width: 980px;
+  margin: auto;
+  position: relative;
+}
+.icon{
+  width: 25px;
+  line-height: 40px;
+  background: black;
+  color: white;
+  text-align: center;
+}
+.left{
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+}
+.right{
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%, -50%);
+}
+
+button {
+  background-color: #555555;
+     border: none;
+     color: white;
+     padding: 15px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 4px 2px;
+     cursor: pointer;
+
+
+  }
